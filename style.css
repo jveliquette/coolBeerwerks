@@ -249,6 +249,7 @@ content: '';
 
 .logo img {
     max-height: 100%;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .logo:hover {
@@ -378,8 +379,14 @@ section {
 .section__pic-container img {
     width: 625px;
     height: auto;
-    transition: 250ms ease-in;
+    animation: fadeIn 1.5s ease-in-out;
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
 
 .section__text {
     text-align: center;
@@ -387,6 +394,7 @@ section {
     background-color: rgba(255, 255, 255, 0.523);
     padding: 2rem;
     border-radius: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .section__text p {
