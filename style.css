@@ -202,12 +202,13 @@ body.nav-active {
 nav,
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 15rem;
+    min-height: 15rem;
     background-color: hsl(20, 9%, 26%);
 }
 
@@ -216,6 +217,7 @@ nav {
     list-style: none;
     font-size: 2rem;
     padding-top: 5rem;
+    margin: 0;
 }
 
 .nav-links a {
@@ -240,11 +242,13 @@ content: '';
 }
 
 .logo {
-    font-size: 5rem;
-    display: flex;
-    position: relative;
+    height: 90%;
     color: white;
     padding-top: 5rem;
+}
+
+.logo img {
+    max-height: 100%;
 }
 
 .logo:hover {
