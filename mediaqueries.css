@@ -30,16 +30,23 @@
         margin: 0 5%;
     }
     .section__pic-container {
-        width: 500px;
+        width: 400px;
         height: auto;
         margin: 0 auto 2rem;
         display: flex;
+        flex-direction: column;
     }
+
+    .section__pic-container img {
+        width: 450px;
+        align-self: center;
+    }
+
     .about-containers {
         margin-top: 0;
     }
 
-    #contact {
+    #slideshow {
         margin-top: 2rem;
     }
     .photo-row {
@@ -104,7 +111,6 @@
         text-align: justify;
     }
     .photo-container img {
-        max-width: 300px;
         margin-bottom: 2rem;
         margin-top: 2rem;
     }

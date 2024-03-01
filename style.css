@@ -359,25 +359,25 @@ section {
     min-height: fit-content;
 }
 
-.section-container {
-    display: flex;
-}
-
 #hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: all 250ms ease;
+    background-image: url(assets/herocanvas.png);
+    background-size: cover;
+    background-position: 0%;
 }
 
 .section__pic-container {
     display: flex;
+    align-self: center;
     flex: 1;
     margin-right: 20px;
 }
 
 .section__pic-container img {
-    width: 625px;
+    width: 600px;
     height: auto;
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -474,4 +474,23 @@ section {
     color: black;
     font-size: 3rem;
     cursor: pointer;
+}
+
+/* SLIDESHOW SECTION */
+
+#slideshow {
+}
+
+.slideshow-container {
+    max-height: 75%;
+    margin-top: 2rem;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.wrapper img {
+    width: 100%;
 }
