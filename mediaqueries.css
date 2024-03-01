@@ -30,7 +30,7 @@
         margin: 0 5%;
     }
     .section__pic-container {
-        width: 400px;
+        width: 500px;
         height: auto;
         margin: 0 auto 2rem;
         display: flex;
@@ -94,10 +94,10 @@
         justify-content: center;
     }
     .section__text__p2 {
-        font-size: 1.35rem;
+        font-size: 2rem;
     }
     .title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .text-container {
         text-align: justify;
