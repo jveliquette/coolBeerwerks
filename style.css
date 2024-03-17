@@ -367,6 +367,10 @@ section {
     background-image: url(assets/herocanvas.png);
     background-size: cover;
     background-position: 0%;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    margin-top: 2rem;
+    border-radius: 2rem;
+    background-color: hsl(20, 9%, 26%);
 }
 
 .section__pic-container {
@@ -482,6 +486,7 @@ section {
 
 #slideshow {
     padding: 4rem;
+    filter: grayscale(25%);
 }
 
 .slider-wrapper {
@@ -503,6 +508,29 @@ section {
 }
 
 .slider img {
-    max-width: 40%;
-    max-height: auto;
+    max-width: 35%;
+    max-height: 500px;
+}
+
+
+/* MAP */
+
+#map {
+    max-width: 100%;
+    height: 500px;
+    align-items: center;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    filter: grayscale(75%);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
