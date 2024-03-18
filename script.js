@@ -26,9 +26,13 @@ function toggleMenu() {
 //     const slides = document.querySelectorAll('.slider img');
 //     const totalSlides = slides.length;
 //     const slideWidth = slides[0].clientWidth; // Assuming all slides have the same width
-//     const scrollSpeed = 0.5; // Adjust this value to control scroll speed
+//     const autoScrollSpeed = 1.5; // Adjust this value to control automatic scroll speed
+//     const delayBeforeResuming = 50; // Adjust this value to control the delay before resuming automatic scrolling (in milliseconds)
+//     let scrollSpeed = autoScrollSpeed; // Initial scroll speed
 //     let scrollPos = 0;
 //     let isScriptScrolling = true; // Flag to indicate whether scrolling is initiated by the script or the user
+//     let isScrolling = false; // Flag to indicate whether manual scrolling is in progress
+//     let resumeTimeout; // Timeout for resuming automatic scrolling
 
 //     // Set the width of the slider to contain all slides
 //     slider.style.width = `${slideWidth * totalSlides}px`;
@@ -57,12 +61,18 @@ function toggleMenu() {
 //     // Start the scroll loop
 //     scrollLoop();
 
-//     // Disable automatic scrolling when the user manually scrolls
+//     // Detect manual scrolling by the user
 //     slider.addEventListener('scroll', function() {
-//         isScriptScrolling = false;
-//         clearTimeout(scrollEndTimeout);
-//         scrollEndTimeout = setTimeout(function() {
-//             isScriptScrolling = true;
-//         }, 100); // Adjust the timeout duration as needed
+//         isScrolling = true;
+//         isScriptScrolling = false; // Disable automatic scrolling when user scrolls
+//         clearTimeout(resumeTimeout); // Clear any existing timeout
+//     });
+
+//     // Check if manual scrolling has ended and schedule automatic scrolling to resume
+//     slider.addEventListener('scrollend', function() {
+//         isScrolling = false;
+//         resumeTimeout = setTimeout(function() {
+//             isScriptScrolling = true; // Resume automatic scrolling
+//         }, delayBeforeResuming);
 //     });
 // });

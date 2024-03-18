@@ -116,4 +116,8 @@
         font-size: 2rem;
     }
 
+    .slider img {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
