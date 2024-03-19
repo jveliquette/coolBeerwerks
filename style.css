@@ -448,6 +448,7 @@ section {
 
 .btn-color-1:hover, .btn-color-2:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .btn-color-1, .btn-color-2:hover {
