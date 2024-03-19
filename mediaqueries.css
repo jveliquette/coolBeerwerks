@@ -55,8 +55,26 @@
         padding-bottom: 5.25rem;
         font-size: 4rem;
     }
+
+    .contact-form {
+        max-width: 50%;
     }
 
+    .info-containers {
+        flex-direction: column;
+    }
+
+    .social-container, .contactinfo-container {
+        width: 100%;
+        margin: 0;
+    }
+    }
+
+@media screen and (max-width: 700px) {
+    .contact-form {
+        max-width: 80%;
+    }
+}
 
 @media screen and (max-width: 600px) {
     #contact, footer {
@@ -119,5 +137,9 @@
     .slider img {
         max-width: 300px;
         max-height: 300px;
+    }
+
+    .contact-form {
+        max-width: 80%;
     }
 }

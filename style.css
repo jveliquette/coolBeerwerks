@@ -679,12 +679,29 @@ footer {
     object-fit: cover;
 }
 
+.info-containers {
+    display: flex;
+    width: 100%;
+}
+
+.social-container, .contactinfo-container {
+    flex: 1;
+    text-align: center;
+    margin: -30rem;
+}
+
+.social-container {
+    margin-right: 200px;
+}
+
+
 .contact-form {
     background-color: white;
-    max-width: 500px;
+    max-width: 600px;
+    flex: 2;
     width: 100%;
     padding: 20px; /* Add padding for spacing inside the form */
-    border-radius: 1rem; /* Add border radius for rounded corners */
+    border-radius: 2rem; /* Add border radius for rounded corners */
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); /* Add shadow for depth */
     margin-top: -150px; /* Adjust margin-top to create space between the photo and form */
     position: relative;
