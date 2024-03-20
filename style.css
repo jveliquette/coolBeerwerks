@@ -227,7 +227,7 @@ nav {
 }
 
 .nav-links a::after {
-content: '';
+    content: '';
     width: 0;
     height: 3px;
     background: rgb(212, 212, 212);
@@ -687,48 +687,92 @@ footer {
 .social-container, .contactinfo-container {
     flex: 1;
     text-align: center;
-    margin: -30rem;
+    margin: -38rem;
 }
 
 .social-container {
     margin-right: 200px;
+
 }
 
+.social-container h1 {
+    font-size: 3rem;
+}
+
+.social-container .social {
+    color: rgb(84, 84, 84);
+}
+
+.hours {
+    padding-top: 2rem;
+}
+
+.hours h1 {
+    padding-bottom: 2rem;
+}
+
+.hours h3 {
+    font-size: 2rem;
+    color: rgb(84, 84, 84);
+}
+
+.hours p {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.contactinfo-container h1 {
+    font-size: 3rem;
+}
+
+.contact-heading {
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: rgb(84, 84, 84);
+}
+
+.contact-item {
+    font-size: 2rem;
+}
+
+.contact-item:hover {
+    text-decoration: underline;
+}
 
 .contact-form {
     background-color: white;
     max-width: 600px;
     flex: 2;
     width: 100%;
-    padding: 20px; /* Add padding for spacing inside the form */
-    border-radius: 2rem; /* Add border radius for rounded corners */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); /* Add shadow for depth */
-    margin-top: -150px; /* Adjust margin-top to create space between the photo and form */
+    padding: 30px;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    margin-top: -150px;
     position: relative;
     z-index: 1;
 }
 
 .contact-form h2 {
-    text-align: center; /* Center the heading */
+    text-align: center;
     font-size: 4rem;
     padding: 4rem;
 }
 
 .contact-form form {
     display: flex;
-    flex-direction: column; /* Arrange form elements vertically */
+    flex-direction: column;
 }
 
 .contact-form label {
-    margin-bottom: 0.5rem; /* Add spacing between labels and inputs */
+    margin-bottom: 0.5rem; /
 }
 
 .contact-form input,
 .contact-form textarea {
     padding: 0.5rem;
-    margin-bottom: 1rem; /* Add spacing between inputs */
-    border: 1px solid #ccc; /* Add border for inputs */
-    border-radius: 0.5rem; /* Add border radius for rounded corners */
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
 }
 
 .contact-form button {
