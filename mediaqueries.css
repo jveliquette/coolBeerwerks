@@ -57,76 +57,11 @@
         flex-direction: column;
     }
 
-    .social-container, .contactinfo-container {
-        width: 100%;
-        margin: 0;
-    }
-
-    .social-container {
-        padding: 4rem;
-    }
-
-    .social-container .hours {
-        padding-top: 4rem;
-    }
-
-    .contactinfo-container {
-        padding: 4rem;
-    }
-
-    .info-containers {
-        flex-direction: row;
-        justify-content: center;/* Display containers side by side */
-    }
-
-    .social-container, .contactinfo-container {
-        flex: 1;
-        margin: 0 -80px;
-    }
 }
 
 @media screen and (max-width: 700px) {
     .contact-form {
         max-width: 80%;
-    }
-
-
-    .social-container h1 {
-        font-size: 2rem;
-    }
-
-    .info-containers .social-container .social i {
-        font-size: 3rem;
-    }
-
-    .hours {
-        padding-top: 2rem;
-    }
-
-    .hours h1 {
-        padding-bottom: 2rem;
-    }
-
-    .hours h3 {
-        font-size: 1.75rem;
-    }
-
-    .hours p {
-        font-size: 1.75rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .contactinfo-container h1 {
-        font-size: 2rem;
-    }
-
-    .contact-heading {
-        padding-top: 2rem;
-        font-size: 1.75rem;
-    }
-
-    .contact-item {
-        font-size: 1.75rem;
     }
 }
 
@@ -195,44 +130,5 @@
 
     .contact-form {
         max-width: 80%;
-    }
-
-
-    .social-container h1 {
-        font-size: 2rem;
-    }
-
-    .info-containers .social-container .social i {
-        font-size: 3rem;
-    }
-
-    .hours {
-        padding-top: 2rem;
-    }
-
-    .hours h1 {
-        padding-bottom: 2rem;
-    }
-
-    .hours h3 {
-        font-size: 1.75rem;
-    }
-
-    .hours p {
-        font-size: 1.75rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .contactinfo-container h1 {
-        font-size: 2rem;
-    }
-
-    .contact-heading {
-        padding-top: 2rem;
-        font-size: 1.75rem;
-    }
-
-    .contact-item {
-        font-size: 1.75rem;
     }
 }

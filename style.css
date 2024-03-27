@@ -700,52 +700,51 @@ footer {
     width: 100%;
 }
 
-.social-container, .contactinfo-container {
+.social-container, .hours, .contact-info {
     flex: 1;
+    margin: 1rem;
+    align-content: center;
     text-align: center;
-    margin: 8rem;
 }
 
-.social-container {
-    margin-right: 200px;
-
+.social-container h1, .hours h1 {
+    font-size: 3.5rem;
+    color: black;
+    padding: 4rem;
 }
 
-.social-container h1, .contactinfo-container h1, .hours h1 {
-    font-size: 3rem;
+.contact-info h1 {
+    padding: 2rem;
+    font-size: 3.5rem;
+    color: black;
 }
 
-.social-container .social {
-    color: rgb(84, 84, 84);
+.social-container .social i {
+    color: rgb(60, 60, 60);
+    padding-bottom: 4rem;
 }
 
-.hours {
-    flex-basis: 100%; /* Force full width on smaller screens */
-    margin-top: 2rem; /* Add margin to separate from other sections */
-}
-
-.hours h1 {
-    padding-bottom: 2rem;
-}
 
 .hours h3 {
-    font-size: 2rem;
-    color: rgb(84, 84, 84);
+    font-size: 2.25rem;
+    color: rgb(60, 60, 60);
+    padding-bottom: 1rem;
 }
 
 .hours p {
-    font-size: 2rem;
-    padding-bottom: 1.5rem;
+    font-size: 2.25rem;
+    padding-bottom: 3rem;
 }
 
 .contact-heading {
-    padding-top: 2rem;
-    font-size: 2rem;
-    color: rgb(84, 84, 84);
+    font-size: 2.25rem;
+    color: rgb(60, 60, 60);
+    padding: 2rem;
 }
 
 .contact-item {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    padding-bottom: 1rem;
 }
 
 .contact-item:hover {
@@ -754,7 +753,7 @@ footer {
 
 .contact-form {
     background-color: white;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     padding: 2rem;
     border-radius: 2rem;
