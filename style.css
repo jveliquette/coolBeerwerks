@@ -402,9 +402,7 @@ section {
     padding: 2rem;
     border-radius: 2rem;
     animation: fadeIn 1.5s ease-in-out;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 .section__text p {
@@ -437,6 +435,7 @@ section {
     justify-content: center;
     gap: 1rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .btn {
@@ -800,13 +799,6 @@ footer {
     background-color: #0056b3;
 }
 
-#photo-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
-
 .photo-row {
     display: flex;
     flex-wrap: wrap;
@@ -823,7 +815,7 @@ footer {
 }
 
 .photo-container img {
-    width: 500px;
+    width: 400px;
     height: auto;
     border-radius: 2rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);

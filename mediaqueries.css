@@ -59,14 +59,19 @@
 
 }
 
+@media (max-width: 1039px) {
+     .photo-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo-container {
+        margin: 2rem 0;
+    }
+}
+
 @media (max-width: 768px) {
     .contact-form {
         max-width: 80%;
-    }
-     .photo-row {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-    .photo-container img {
     }
 }
 
@@ -137,3 +142,4 @@
         max-width: 80%;
     }
 }
+
