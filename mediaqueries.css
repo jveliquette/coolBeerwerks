@@ -21,18 +21,15 @@
         margin-top: 1rem;
     }
 
-    section, .section-container {
-        height: fit-content;
-    }
-    section {
-        margin: 0 5%;
-    }
     .section__pic-container {
         width: 400px;
         height: auto;
         margin: 0 auto 2rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .section__text {
     }
 
     .section__pic-container img {
@@ -49,15 +46,15 @@
         font-size: 4rem;
     }
 
-    .contact-form {
-        max-width: 50%;
-    }
-
     .info-containers {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
     }
 
 }
+
 
 @media (max-width: 1039px) {
      .photo-row {
@@ -69,48 +66,72 @@
     }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 990px) {
     .contact-form {
         max-width: 80%;
     }
 }
 
-@media screen and (max-width: 600px) {
-    #contact, footer {
-        height: 40vh;
+@media (max-width: 740px) {
+    #hamburger-nav .logo img {
+        width: 500px;
     }
+}
+
+@media (max-width: 675px) {
+    #hamburger-nav .logo img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
     #hero {
-        height: 83vh;
         margin-bottom: 0;
     }
+
     article {
         font-size: 1rem;
     }
+
     footer nav {
         height: fit-content;
         margin-bottom: 2rem;
     }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
     }
+
     .contact-info-container {
         margin: 1;
     }
+
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
     }
+
     .experience-sub-title {
         font-size: 1.25rem;
     }
+
     .logo {
         font-size: 4rem;
         padding-bottom: 5rem;
     }
+
     .nav-links {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
+
     .section__pic-container {
         width: 400px;
         display: flex;
@@ -137,9 +158,101 @@
         max-width: 300px;
         max-height: 300px;
     }
+}
 
-    .contact-form {
-        max-width: 80%;
+@media (max-width: 500px) {
+.contact-form h2 {
+    font-size: 3rem;
+}
+}
+
+
+@media (max-width: 475px) {
+    #hamburger-nav {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .menu-links {
+        left: 10%;
+    }
+
+    .menu-links a {
+        font-size: 2rem;
+        padding: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .section__pic-container img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .photo-container img {
+        max-width: 300px;
     }
 }
 
+@media (max-width: 430px) {
+    .footer-logo img {
+        height: 150px;
+        width: auto;
+    }
+
+    .footer-links li a{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #hamburger-nav .logo img {
+        width: 300px;
+    }
+
+    .social-container h1, .hours h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .social-container .social i {
+        font-size: 4rem;
+    }
+
+    .hours h3 {
+        font-size: 1.9rem;
+    }
+
+    .hours p {
+        font-size: 1.9rem;
+    }
+
+    .contact-heading {
+        font-size: 1.9rem;
+    }
+
+    .contact-item {
+        font-size: 1.9rem;
+    }
+
+    .info-containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        margin-left: -1.9rem;
+    }
+
+    .hours {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-img img {
+        max-height: 500px;
+    }
+}
