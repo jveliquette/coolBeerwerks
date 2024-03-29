@@ -138,6 +138,7 @@ body.nav-active {
     line-height: 1em;
     text-transform: uppercase;
     letter-spacing: 16px;
+    text-align: center;
     /* padding-inline-start: 16px; */
     -webkit-text-fill-color: transparent;
     background-clip: text;
