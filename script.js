@@ -20,59 +20,58 @@ function toggleMenu() {
 }
 
 
-/* Automatic Slideshow */
-// document.addEventListener('DOMContentLoaded', function () {
-//     const slider = document.querySelector('.slider');
-//     const slides = document.querySelectorAll('.slider img');
-//     const totalSlides = slides.length;
-//     const slideWidth = slides[0].clientWidth; // Assuming all slides have the same width
-//     const autoScrollSpeed = 1.5; // Adjust this value to control automatic scroll speed
-//     const delayBeforeResuming = 50; // Adjust this value to control the delay before resuming automatic scrolling (in milliseconds)
-//     let scrollSpeed = autoScrollSpeed; // Initial scroll speed
-//     let scrollPos = 0;
-//     let isScriptScrolling = true; // Flag to indicate whether scrolling is initiated by the script or the user
-//     let isScrolling = false; // Flag to indicate whether manual scrolling is in progress
-//     let resumeTimeout; // Timeout for resuming automatic scrolling
+/* Slideshow Automation */
+// Get the slider container
+const slider = document.querySelector('.slider');
 
-//     // Set the width of the slider to contain all slides
-//     slider.style.width = `${slideWidth * totalSlides}px`;
+// Function to animate the slideshow
+function animateSlider() {
+    // Set the initial scroll position to 0
+    let scrollPosition = 0;
 
-//     function scrollLoop() {
-//         if (isScriptScrolling) {
-//             scrollPos += scrollSpeed;
-//             if (scrollPos >= slideWidth) {
-//                 scrollPos -= slideWidth;
-//                 slider.appendChild(slider.firstElementChild.cloneNode(true)); // Move the first slide to the end for continuous loop
-//                 slider.style.transform = `translateX(-${scrollPos}px)`;
-//                 slider.removeChild(slider.firstElementChild); // Remove the first slide after moving it
-//             } else {
-//                 slider.style.transform = `translateX(-${scrollPos}px)`;
-//             }
-//         }
-//         requestAnimationFrame(scrollLoop);
-//     }
+    // Define the speed of scrolling and interval duration
+    const scrollSpeed = 2; // Higher values make the scrolling faster
+    const intervalDuration = 50; // Milliseconds
 
-//     // Clone the slides to ensure continuous looping
-//     for (let i = 0; i < totalSlides - 1; i++) {
-//         const cloneSlide = slides[i].cloneNode(true);
-//         slider.appendChild(cloneSlide);
-//     }
+    // Define the interval function to scroll the slider
+    const scrollInterval = setInterval(function() {
+        // Increment the scroll position
+        scrollPosition += scrollSpeed;
 
-//     // Start the scroll loop
-//     scrollLoop();
+        // Check if we've reached the end of the slider
+        if (scrollPosition >= slider.scrollWidth) {
+            // Reset scroll position to the beginning
+            scrollPosition = 0;
+        }
 
-//     // Detect manual scrolling by the user
-//     slider.addEventListener('scroll', function() {
-//         isScrolling = true;
-//         isScriptScrolling = false; // Disable automatic scrolling when user scrolls
-//         clearTimeout(resumeTimeout); // Clear any existing timeout
-//     });
+        // Set the new scroll position
+        slider.scrollLeft = scrollPosition;
+    }, intervalDuration);
 
-//     // Check if manual scrolling has ended and schedule automatic scrolling to resume
-//     slider.addEventListener('scrollend', function() {
-//         isScrolling = false;
-//         resumeTimeout = setTimeout(function() {
-//             isScriptScrolling = true; // Resume automatic scrolling
-//         }, delayBeforeResuming);
-//     });
-// });
+    // Add event listeners to pause the automatic scrolling when the user interacts with the slider
+    slider.addEventListener('mousedown', pauseAnimation);
+    slider.addEventListener('touchstart', pauseAnimation);
+    slider.addEventListener('wheel', pauseAnimation);
+
+    // Function to pause the automatic scrolling
+    function pauseAnimation() {
+        clearInterval(scrollInterval);
+    }
+
+    // Resume automatic scrolling when the user stops interacting with the slider
+    slider.addEventListener('mouseup', resumeAnimation);
+    slider.addEventListener('touchend', resumeAnimation);
+    slider.addEventListener('mouseleave', resumeAnimation);
+
+    // Function to resume automatic scrolling
+    function resumeAnimation() {
+        // Clear any existing interval to prevent multiple intervals running simultaneously
+        clearInterval(scrollInterval);
+
+        // Restart the automatic scrolling animation after a brief delay (adjust as needed)
+        setTimeout(animateSlider, 2000); // Resume after 2 seconds
+    }
+}
+
+// Call the function to start the slideshow animation
+animateSlider();
