@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--meta tags-->
+    <title>Cool Beerwerks</title>
+    <meta name="title" content="Cool Beerwerks">
+    <meta name="description" content="Craft Beer brewed in house - Full bar & Restaurant">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/png">
+
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <!--preload images-->
+    <link rel="preload" as="image" href="assets/Growler_1.webp">
+    <link rel="preload" as="image" href="assets/Growler_1.webp">
+    <link rel="preload" as="image" href="assets/Growler_1.webp">
+
+    <!--font awesome link-->
+    <script src="https://kit.fontawesome.com/af92b6bf29.js" crossorigin="anonymous"></script>
+
+    <!--materialize link-->
+
+</head>
+<body>
+    <!--preload-->
+    <div class="preload" data-preload>
+        <div class="circle"></div>
+        <p class="text">Cool Beerwerks</p>
+    </div>
+
+    <!--top bar-->
+    <div class="topbar">
+        <div class="top-container">
+            <a href="https://www.google.com/maps/dir//5020+Ellinghouse+Dr,+Auburn+Lake+Trails,+CA+95614/@38.8873115,-121.0378345,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x809b04724f9298d9:0x693ec87fc1a65ff5!2m2!1d-121.01449!2d38.8862752?entry=ttu" class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">
+                    5020 Ellinghouse Dr Suite H, Cool, California 95614
+                </span>
+            </a>
+
+            <div class="separator"></div>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span"><strong>Tuesday:</strong> 4pm-9pm</span>
+                <span class="span"><strong> Wednesday-Monday:</strong> 11am-9pm</span>
+            </div>
+
+            <a href="tel:(530)885-5866" class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">(530) 885-5866</span>
+            </a>
+
+            <div class="separator"></div>
+
+            <a href="mailto:info@cbwbeer.com" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">info@cbwbeer.com</span>
+            </a>
+        </div>
+    </div>
+
+    <!--desktop nav-->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="assets/logo900px.png" alt="white logo" width="700px" height="auto">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--hamburger menu (mobile)-->
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="assets/logo900px.png" alt="logo responsive" width="700px" height="auto">
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div>
+                <ul class="menu-links">
+                    <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="./menu.html" onclick="toggleMenu()">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-about">
+        <div class="about-img">
+            <img src="assets/about.png" alt="Restaurant">
+        </div>
+        <div class="about-p">
+            <h1>About Us</h1>
+            <p>Cool Beerwerks is a micro brewery with a unique fusion of Hawaiian and Japanese cuisine. From Loco Moco to top-notch sashimi, we offer a truly unique and unforgettable experience.</p>
+        </div>
+        <div class="reviews">
+            <h1>What our customers say</h1>
+            <script src="https://widget.hybrid-reach.com/reviews.js" data-id="66072b9a02f628756cd1858b"></script>
+            <div class="btn-container">
+                <a href="https://www.toasttab.com/coolbeerwerks/giftcards"><button class="btn btn-color-1" type="button">Purchase a Gift Card</button></a>
+            </div>
+        </div>
+        <div class="about-video">
+            <iframe src="https://www.youtube.com/embed/Xd9oBBVWLi0?si=k_WmE_a5e8aQTIPj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-logo">
+            <img class="footer-logo" src="./assets/footer-logo1.png" alt="Cool Beerwerks Logo with Mountain Range">
+        </div>
+        <div class="social">
+            <i class="fa-brands fa-yelp" onclick="location.href='https://www.yelp.com/biz/cool-beerwerks-cool'"></i>
+            <i class="fa-brands fa-facebook-f" onclick="location.href='https://www.facebook.com/people/Cool-Beerwerks/100063713433216/'"></i>
+            <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/coolbeerwerks/?hl=en'"></i>
+            <i class="fa-solid fa-beer-mug-empty" onclick="location.href='https://untappd.com/w/cool-beerwerks/73953'"></i>
+        </div>
+        <div>
+             <ul class="footer-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="section__text__p2">Copyright &copy; 2024 Cool Beerwerks. All Rights Reserved.</p>
+            <p class="section__text__p2">Website created by Julia Veliquette</p>
+        </div>
+    </footer>
+
+    <!--js link-->
+    <script src="script.js"></script>
+
+    <!--icon link-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
