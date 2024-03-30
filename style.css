@@ -921,3 +921,103 @@ footer {
 .reviews h1 {
     font-size: 3rem;
 }
+
+
+/* MENU PAGE */
+
+#hero-menu {
+    position: relative;
+    transition: all 250ms ease;
+    margin: 4rem;
+}
+
+.menu-img {
+    width: 100%;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+
+.menu-img img {
+    width: 100%;
+    height: 500px;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: center bottom;
+    animation: zoomIn 10s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+
+  .menu {
+    font-size: 14px;
+  }
+
+  .menu-group-heading {
+    margin: 0;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+
+  .menu-item {
+    display: flex;
+  }
+
+  .menu-item-text {
+    flex-grow: 1;
+  }
+
+  .menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .menu-item-name {
+    margin-right: 1.5em;
+  }
+
+  .menu-item-description {
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 992px) {
+    .menu {
+      font-size: 16px;
+    }
+
+    .menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-image {
+      width: 125px;
+      height: 125px;
+    }
+  }
