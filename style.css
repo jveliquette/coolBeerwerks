@@ -950,6 +950,7 @@ footer {
     object-fit: cover;
     object-position: center bottom;
     animation: zoomIn 10s ease-in-out forwards;
+    opacity: 0.8;
 }
 
 @keyframes zoomIn {
@@ -959,6 +960,26 @@ footer {
     100% {
         transform: scale(1.15);
     }
+}
+
+.menu-heading {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(26, 26, 26, 0.75);
+    padding: 4rem;
+    border-radius: 2rem;
+    width: 90%;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.menu-heading h1 {
+    margin: 0;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .container {

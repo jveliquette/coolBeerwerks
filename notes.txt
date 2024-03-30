@@ -1,1 +1,5 @@
 [x] - Fix preload page - when screen size is reduced, the text is not centered (anything below 560px)
+[ ] - Add ability of jump to to menu headings and some kind of toggle bar on the top
+[ ] - Add Menu heading
+[ ] - Add ability for contact form to be sent somewhere
+[ ] - photo page?? - add more photos
