@@ -39,13 +39,13 @@ function animateSlider() {
         scrollPosition += scrollSpeed;
 
         // Check if we've reached the end of the slider
-        if (scrollPosition >= slider.scrollWidth) {
+        if (scrollPosition >= slider.scrollWidth - slider.clientWidth) {
             // Reset scroll position to the beginning
             scrollPosition = 0;
         }
 
         // Set the new scroll position
-        slider.scrollLeft = scrollPosition;
+        slider.scrollBy(scrollSpeed, 0)
     }, intervalDuration);
 
     // Add event listeners to pause the automatic scrolling when the user interacts with the slider

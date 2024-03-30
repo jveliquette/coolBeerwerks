@@ -967,7 +967,7 @@ footer {
     top: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(26, 26, 26, 0.75);
+    background-color: rgba(26, 26, 26, 0.895);
     padding: 4rem;
     border-radius: 2rem;
     width: 90%;
