@@ -120,77 +120,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero-contact">
-        <div class="contact-img">
-            <img src="assets/contact.png" alt="beer with CBW sign">
-        </div>
-        <div class="contact-form">
-            <h2>Contact Us</h2>
-            <!--ADD EMAIL INFO TO MAKE THE MESSAGE GO SOMEWHERE - will be using form submit - need megan to accept the confirmation once i know it works-->
-            <form action="https://formsubmit.co/c78ca03e5fdb7c107c2579be3612141c" method="POST">
-                <!--HONEYPOT-->
-                <input type="text" name="_honey" style="display: none;">
-
-                <!--DISABLE CAPTCHA-->
-                <input type="hidden" name="_captcha" value="false">
-
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
-
-                <label for="name">Name:</label>
-                <input type="text" id="Name" name="Name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="Email" name="Email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="Message" name="Message" rows="4" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </div>
-
-        <div class="info-containers">
-            <div class="hours">
-                <h1>Hours</h1>
-                <h3>Monday:</h3>
-                <p>11:00am - 9:00pm</p>
-                <h3>Tuesday:</h3>
-                <p>4:00pm - 9:00pm</p>
-                <h3>Wednesday-Sunday:</h3>
-                <p>11:00am - 9:00pm</p>
-            </div>
-
-            <div class="social-container">
-                <h1>Social Media</h1>
-
-                <div class="social">
-                    <i class="fa-brands fa-yelp" onclick="location.href='https://www.yelp.com/biz/cool-beerwerks-cool'"></i>
-                    <i class="fa-brands fa-facebook-f" onclick="location.href='https://www.facebook.com/people/Cool-Beerwerks/100063713433216/'"></i>
-                    <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/coolbeerwerks/?hl=en'"></i>
-                    <i class="fa-solid fa-beer-mug-empty" onclick="location.href='https://untappd.com/w/cool-beerwerks/73953'"></i>
-                </div>
-            </div>
-
-            <div class="contact-info">
-                <h1>Contact Info</h1>
-
-                <h3 class="contact-heading">Address:</h3>
-                <a href="https://www.google.com/maps/dir//5020+Ellinghouse+Dr,+Auburn+Lake+Trails,+CA+95614/@38.8873115,-121.0378345,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x809b04724f9298d9:0x693ec87fc1a65ff5!2m2!1d-121.01449!2d38.8862752?entry=ttu" class="contact-item">5020 Ellinghouse Drive<br> Suite H, Cool, California 95614</a>
-
-                <h3 class="contact-heading">Phone Number:</h3>
-                <a href="tel:(530)885-5866" class="contact-item">(530) 885-5866</a>
-
-                <h3 class="contact-heading">Email Address:</h3>
-                <a href="mailto:info@cbwbeer.com" class="contact-item link">info@cbwbeer.com</a>
-            </div>
-        </div>
-
-        <div class="photo-row">
-            <div class="photo-container">
-                <img src="assets/pic-1.png" alt="">
-            </div>
-            <div class="photo-container">
-                <img src="assets/pic-2.png" alt="">
+    <section id="hero-success">
+        <div class="success">
+            <h2>Success!</h2>
+            <p>Your message has been sent! We will get back to you soon!</p>
+            <a href="./index.html">Back To Home</a>
+            <div class="success-img">
+                <img src="./assets/beersdraft.png" alt="beers on draft">
             </div>
         </div>
     </section>
@@ -218,7 +154,6 @@
             <p class="section__text__p2">Copyright &copy; 2024 Cool Beerwerks. All Rights Reserved.</p>
             <p class="section__text__p2">Website created by Julia Veliquette</p>
         </div>
-
     </footer>
 
     <!--js link-->
