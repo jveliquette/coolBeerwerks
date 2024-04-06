@@ -178,6 +178,13 @@
     }
 }
 
+@media (max-width: 524px) {
+    .dropdown-content li a {
+        font-size: 1.5rem;
+    }
+}
+
+
 @media (max-width: 500px) {
 .contact-form h2 {
     font-size: 3rem;
@@ -211,6 +218,10 @@
     .photo-container img {
         max-width: 300px;
     }
+
+    .dropdown-btn {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 430px) {
@@ -221,6 +232,12 @@
 
     .footer-links li a{
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .dropdown-content li a {
+        font-size: 1.2rem;
     }
 }
 
@@ -272,5 +289,20 @@
 
     .contact-img img {
         max-height: 500px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .about-p h1 {
+        font-size: 2.25rem;
+    }
+
+    .about-p p {
+        font-size: 1.6rem;
+    }
+
+    .reviews h1 {
+        font-size: 2.25rem;
     }
 }

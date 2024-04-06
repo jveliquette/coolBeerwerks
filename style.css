@@ -962,26 +962,6 @@ footer {
     }
 }
 
-.menu-heading {
-    position: absolute;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(26, 26, 26, 0.895);
-    padding: 4rem;
-    border-radius: 2rem;
-    width: 90%;
-    max-width: 600px;
-    z-index: 1;
-}
-
-.menu-heading h1 {
-    margin: 0;
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1031,31 +1011,30 @@ footer {
 /* DROPDOWN MENU */
 
 .dropdown {
-    max-width: 13em;
+    max-width: 90%;
     margin: 80px auto 0;
     position: relative;
     width: 100%;
     position: absolute;
-    top: -0.5%;
+    top: -0.3%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(26, 26, 26, 0.895);
     border-radius: 2rem;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
     z-index: 1;
 }
 
 .dropdown-btn {
     background: #1d1f24;
-    font-size: 18px;
+    font-size: 3rem;
     width: 100%;
     border: none;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7em 0.5em;
+    padding: 1.5rem;
     border-radius: 0.5em;
     cursor: pointer;
 }
@@ -1071,8 +1050,8 @@ footer {
     visibility: hidden;
     list-style: none;
     position: absolute;
-    top: 4em;
-    width: 100%;
+    top: 6.5rem;
+    max-width: 100%;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1094,7 +1073,6 @@ footer {
     position: relative;
     left: 100%;
     transition: 0.5s;
-    transition-delay: calc(30ms * var(--delay));
 }
 
 .dropdown:focus-within .dropdown-content li {
@@ -1106,9 +1084,27 @@ footer {
 }
 
 .dropdown-content li a {
-    display: block;
-    padding: 0.7em 0.5em;
+    padding: 1rem;
     color: #fff;
     margin: 0.1em 0;
     text-decoration: none;
+    text-align: center;
+}
+
+.back-to-top {
+    background-color: #8a8a8a;
+    width: 150px;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin: 2rem 0;
+}
+
+.back-to-top a {
+    color: white;
+    text-align: center;
+}
+
+.back-to-top:hover {
+    background-color: #1d1f24;
+    transition: transform ease 1s;
 }
