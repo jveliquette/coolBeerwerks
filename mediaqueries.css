@@ -66,6 +66,20 @@
     }
 }
 
+@media screen and (min-width: 992px) {
+    .menu {
+      font-size: 16px;
+    }
+
+    .menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-image {
+      width: 125px;
+      height: 125px;
+    }
+  }
 
 @media (max-width: 990px) {
     .contact-form {
