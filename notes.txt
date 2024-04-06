@@ -5,3 +5,5 @@
 [ ] - photo page?? - add more photos
 [ ] - About page responsiveness
 [ ] - Menu page responsiveness
+[ ] - Add "Back to top" button at bottom of menu page
+[ ] - Fix dropdown menu styling
