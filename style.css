@@ -469,18 +469,18 @@ section {
 }
 
 .btn-color-1, .btn-color-2:hover {
-    background: rgb(53, 53, 53);
+    background: #1d1f24;
     color: white;
 }
 
 .btn-color-1:hover {
-    background: hsl(20, 9%, 26%);
-    color: rgb(212, 212, 212)
+    background: #434549;
+    color: rgb(255, 255, 255)
 }
 
 .btn-color-2 {
-    background: hsl(20, 9%, 26%);
-    color: rgb(212, 212, 212);
+    background: #434549;
+    color: rgb(255, 255, 255);
 }
 .btn-color-2:hover {
     border: hsl(20, 9%, 26%) 0.1rem solid;
