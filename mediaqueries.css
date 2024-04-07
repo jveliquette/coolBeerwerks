@@ -13,12 +13,10 @@
     .topbar {
         display: none;
     }
-    #experience, .experience-details-container {
-        margin-top: 2rem;
+
     }
     #hero, .section-container {
         display: block;
-        margin-top: 1rem;
     }
 
     .section__pic-container {
@@ -27,9 +25,6 @@
         margin: 0 auto 2rem;
         display: flex;
         flex-direction: column;
-    }
-
-    .section__text {
     }
 
     .section__pic-container img {
@@ -285,10 +280,6 @@
     .hours {
         justify-content: center;
         align-items: center;
-    }
-
-    .contact-img img {
-        max-height: 500px;
     }
 
     .success h2 {

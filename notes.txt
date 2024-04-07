@@ -1,9 +1,9 @@
 [x] - Fix preload page - when screen size is reduced, the text is not centered (anything below 560px)
 [x] - Add ability of jump to to menu headings and some kind of toggle bar on the top
 [x] - Add Menu heading
-[ ] - Add ability for contact form to be sent somewhere
+[ ] - Change contact form email to cbw email and domain site
 [ ] - photo page?? - add more photos
 [x] - About page responsiveness
 [x] - Menu page responsiveness
 [x] - Add "Back to top" button at bottom of menu page
-[x] - Fix dropdown menu styling
+[ ] - Fix dropdown menu styling
