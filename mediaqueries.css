@@ -73,10 +73,6 @@
       width: 125px;
       height: 125px;
     }
-
-    .dropdown-content {
-        grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 990px) {
@@ -169,6 +165,18 @@
     .slider img {
         max-width: 300px;
         max-height: 300px;
+    }
+}
+
+@media (max-width: 529px) {
+    .dropdown-content {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dropdown-content li {
+        min-width: 50%;
     }
 }
 
