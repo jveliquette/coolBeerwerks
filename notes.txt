@@ -7,3 +7,4 @@
 [x] - Menu page responsiveness
 [x] - Add "Back to top" button at bottom of menu page
 [ ] - Fix dropdown menu styling
+[x] - Fix favicon
