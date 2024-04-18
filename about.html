@@ -42,7 +42,7 @@
     <!--top bar-->
     <div class="topbar">
         <div class="top-container">
-            <a href="https://www.google.com/maps/dir//5020+Ellinghouse+Dr,+Auburn+Lake+Trails,+CA+95614/@38.8873115,-121.0378345,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x809b04724f9298d9:0x693ec87fc1a65ff5!2m2!1d-121.01449!2d38.8862752?entry=ttu" class="topbar-item">
+            <a href="https://www.google.com/maps/dir//5020+Ellinghouse+Dr,+Auburn+Lake+Trails,+CA+95614/@38.8873115,-121.0378345,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x809b04724f9298d9:0x693ec87fc1a65ff5!2m2!1d-121.01449!2d38.8862752?entry=ttu" class="topbar-item" target="_blank">
                 <div class="icon">
                     <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
                 </div>
@@ -65,7 +65,7 @@
                 <div class="icon">
                     <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
                 </div>
-                <span class="span">(530) 885-5866</span>
+                <span class="span">(530)&nbsp;885&#8209;5866</span>
             </a>
 
             <div class="separator"></div>
@@ -80,7 +80,7 @@
     </div>
 
     <!--desktop nav-->
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" aria-label="Main navigation">
         <div class="logo">
             <img src="assets/logo900px.png" alt="white logo" width="700px" height="auto">
         </div>
@@ -95,7 +95,7 @@
     </nav>
 
     <!--hamburger menu (mobile)-->
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" aria-label="Mobile navigation">
         <div class="logo">
             <img src="assets/logo900px.png" alt="logo responsive" width="700px" height="auto">
         </div>
@@ -130,11 +130,11 @@
             <h1>What our customers say</h1>
             <script src="https://widget.hybrid-reach.com/reviews.js" data-id="66072b9a02f628756cd1858b"></script>
             <div class="btn-container">
-                <a href="https://www.toasttab.com/coolbeerwerks/giftcards"><button class="btn btn-color-1" type="button">Purchase a Gift Card</button></a>
+                <a href="https://www.toasttab.com/coolbeerwerks/giftcards" class="btn btn-color-1" target="_blank">Purchase a Gift Card</a>
             </div>
         </div>
         <div class="about-video">
-            <iframe src="https://www.youtube.com/embed/Xd9oBBVWLi0?si=k_WmE_a5e8aQTIPj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Xd9oBBVWLi0?si=k_WmE_a5e8aQTIPj" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -144,10 +144,22 @@
             <img class="footer-logo" src="./assets/footer-logo1.png" alt="Cool Beerwerks Logo with Mountain Range">
         </div>
         <div class="social">
-            <i class="fa-brands fa-yelp" onclick="location.href='https://www.yelp.com/biz/cool-beerwerks-cool'"></i>
-            <i class="fa-brands fa-facebook-f" onclick="location.href='https://www.facebook.com/people/Cool-Beerwerks/100063713433216/'"></i>
-            <i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/coolbeerwerks/?hl=en'"></i>
-            <i class="fa-solid fa-beer-mug-empty" onclick="location.href='https://untappd.com/w/cool-beerwerks/73953'"></i>
+            <a href="https://www.yelp.com/biz/cool-beerwerks-cool" target="_blank" class="icon-link" aria-label="Yelp">
+                <i class="fa-brands fa-yelp" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://www.facebook.com/people/Cool-Beerwerks/100063713433216/" target="_blank" class="icon-link" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/coolbeerwerks/?hl=en" target="_blank" class="icon-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://untappd.com/w/cool-beerwerks/73953" target="_blank" class="icon-link" aria-label="Untappd">
+                <i class="fa-solid fa-beer-mug-empty"></i>
+            </a>
+
         </div>
         <div>
             <ul class="footer-links">
@@ -159,7 +171,7 @@
         </div>
         <div class="copyright">
             <p class="section__text__p2">Copyright &copy; 2024 Cool Beerwerks. All Rights Reserved.</p>
-            <p class="section__text__p2">Website created by Julia Veliquette</p>
+            <a href="https:www.linkedin.com/in/julia-veliquette-379255289" target="_blank">Website created by Julia Veliquette</a>
         </div>
     </footer>
 
