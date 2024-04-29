@@ -662,10 +662,13 @@ footer {
     text-align: center;
     font-size: 1.75rem;
     color: white;
+    background-color: rgb(50, 45, 45);
+    border-radius: 2rem;
+    padding: 1rem;
 }
 
 .copyright a:hover {
-    color: #000000;
+    background-color: #000000;
 }
 
 
