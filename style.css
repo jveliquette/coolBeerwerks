@@ -970,6 +970,32 @@ footer {
     }
 }
 
+.tuesday-menu-announcement {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tuesday-menu-button {
+    background-color: #434549;
+    border-radius: 0.5em;
+    max-width: 100%;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tuesday-menu-button a {
+    color: white;
+    text-align: center;
+}
+
+.tuesday-menu-button:hover {
+    background-color:  #1d1f24;
+    transition: all 0.3
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

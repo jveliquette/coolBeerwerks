@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--meta tags-->
+    <title>Cool Beerwerks</title>
+    <meta name="title" content="Cool Beerwerks">
+    <meta name="description" content="Craft Beer brewed in house - Full bar & Restaurant">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="assets/CBW.png" type="image/png">
+
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <!--preload images-->
+    <link rel="preload" as="image" href="assets/Growler_1.webp">
+    <link rel="preload" as="image" href="assets/Growler_1.webp">
+    <link rel="preload" as="image" href="assets/Growler_1.webp">
+
+    <!--font awesome link-->
+    <script src="https://kit.fontawesome.com/af92b6bf29.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--preload-->
+    <div class="preload" data-preload>
+      <div class="circle"></div>
+      <p class="text">Cool Beerwerks</p>
+    </div>
+
+    <!--top bar-->
+    <div class="topbar">
+          <div class="top-container">
+              <a href="https://www.google.com/maps/dir//5020+Ellinghouse+Dr,+Auburn+Lake+Trails,+CA+95614/@38.8873115,-121.0378345,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x809b04724f9298d9:0x693ec87fc1a65ff5!2m2!1d-121.01449!2d38.8862752?entry=ttu" class="topbar-item" target="_blank">
+                  <div class="icon">
+                      <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                      5020 Ellinghouse Dr Suite H, Cool, California 95614
+                  </span>
+              </a>
+
+              <div class="separator"></div>
+
+              <div class="topbar-item item-2">
+                  <div class="icon">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span"><strong>Tuesday:</strong> 4pm-9pm</span>
+                  <span class="span"><strong> Wednesday-Monday:</strong> 11am-9pm</span>
+              </div>
+
+              <a href="tel:(530)885-5866" class="topbar-item">
+                  <div class="icon">
+                      <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">(530)&nbsp;885&#8209;5866</span>
+              </a>
+
+              <div class="separator"></div>
+
+              <a href="mailto:info@cbwbeer.com" class="topbar-item link">
+                  <div class="icon">
+                      <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">info@cbwbeer.com</span>
+              </a>
+          </div>
+    </div>
+
+    <!--desktop nav-->
+    <nav id="desktop-nav" aria-label="Main navigation">
+        <div class="logo">
+            <img src="assets/logo900px.png" alt="white logo" width="700px" height="auto">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--hamburger menu (mobile)-->
+
+    <nav id="hamburger-nav" aria-label="Mobile navigation">
+        <div class="logo">
+            <img src="assets/logo900px.png" alt="logo responsive" width="700px" height="auto">
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <ul class="menu-links">
+                    <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="./menu.html" onclick="toggleMenu()">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-menu">
+
+        <div class="menu-img" id="top">
+            <img src="assets/tacos.jpg" alt="Tacos">
+        </div>
+
+        <div class="dropdown">
+            <input type="checkbox" id="dropdown">
+            <label for="dropdown" class="dropdown-btn">
+                <span>TUESDAY'S MENU</span>
+            </label>
+        </div>
+
+
+        <div class="tuesday-menu-announcement">
+            <h3>On Tuesdays, join us for Bingo Night and Taco Tuesday featuring a separate menu exclusive to Tuesdays only.</h3>
+            <p>*Full menu not available on Tuesday</p>
+        </div>
+
+        <div class="container">
+
+            <div class="menu">
+
+
+
+                <h2 class="menu-group-heading" id="appetizers">APPETIZERS</h2>
+
+                <div class="menu-group">
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Pot Stickers</span>
+                            </h3>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Spring Rolls</span>
+                            </h3>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Maui Fried Shrimp</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Coconut Prawns</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Fried Seasonal Veggies</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Bacon Gouda Bites</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <h2 class="menu-group-heading" id="tacos">TACOS</h2>
+                <p>Two tacos with a side for $12.00</p>
+                <p>Two tacos without a side for $8.00</p>
+
+                <div class="menu-group">
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Beer Battered Cod Tacos</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Filled with tartar slaw, avocado, and cilantro.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">BBQ Pulled Pork Tacos</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Filled with cilantro lime corn coleslaw, avocado crema, and pickled onions.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Cajun Shrimp Tacos</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Filled with mango salsa, coleslaw, and cilantro.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Beef Tacos</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Filled with Lettuce, cheese, and tomato salsa,
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Chicken Tacos</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Filled with shredded seasoned chicken breast, lettuce, pickled onions, house made salsa, cotija cheese, and cilantro.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+
+                        <div class="menu-item-text">
+
+                            <p class="menu-item-description"></p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <p class="menu-item-description"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <p class="menu-item-description"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Side Options</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Chips and Tomato Salsa <br>
+                                Chips and Mango Salsa <br>
+                                Macaroni Salad <br>
+                                Coleslaw
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <h2 class="menu-group-heading" id="other">OTHER ITEMS</h2>
+
+                <div class="menu-group">
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Taco Salad</span>
+                                <span class="menu-item-price">$14.00</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Ground beef, tomato, black olives, white onion, avocado, shredded cheese, and crushed chips on a bed of romaine lettuce. Your choice of dressing.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Nachos Supreme</span>
+                                <span class="menu-item-price">$14.00</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Ground beef, tomato, black olives, green onions, sour cream, and nacho cheese on a bed of tortilla chips.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Loaded Taco Fries</span>
+                                <span class="menu-item-price">$14.00</span>
+                            </h3>
+                            <p class="menu-item-description">
+                                Seasoned ground beef, cheese, sour cream, and green onion on a bed of fries.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <h2 class="menu-group-heading" id="kids">KIDS MENU</h2>
+
+                <div class="menu-group">
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Quesadilla</span>
+                            </h3>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Cheese Nachos</span>
+                            </h3>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <div class="menu-item-text">
+                            <h3 class="menu-item-heading">
+                                <span class="menu-item-name">Slider Tostadas</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+</section>
+
+      <!--Footer Section-->
+    <footer>
+
+      <div class="footer-logo">
+        <img class="footer-logo" src="./assets/footer-logo1.png" alt="Cool Beerwerks Logo with Mountain Range">
+      </div>
+
+      <div class="social">
+        <a href="https://www.yelp.com/biz/cool-beerwerks-cool" target="_blank" class="icon-link" aria-label="Yelp">
+            <i class="fa-brands fa-yelp" aria-hidden="true"></i>
+        </a>
+
+        <a href="https://www.facebook.com/people/Cool-Beerwerks/100063713433216/" target="_blank" class="icon-link" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/coolbeerwerks/?hl=en" target="_blank" class="icon-link" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://untappd.com/w/cool-beerwerks/73953" target="_blank" class="icon-link" aria-label="Untappd">
+            <i class="fa-solid fa-beer-mug-empty"></i>
+        </a>
+
+    </div>
+
+      <div>
+        <ul class="footer-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p class="section__text__p2">Copyright &copy; 2024 Cool Beerwerks. All Rights Reserved.</p>
+        <a href="https://www.linkedin.com/in/julia-veliquette-379255289" target="_blank">Website created by Julia Veliquette</a>
+      </div>
+
+    </footer>
+
+    <!--js link-->
+    <script src="script.js"></script>
+
+    <!--icon link-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
