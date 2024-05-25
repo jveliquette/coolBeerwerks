@@ -81,6 +81,12 @@
     }
 }
 
+@media (max-width: 800px) {
+    .intro-video iframe {
+        width: 300px;
+    }
+}
+
 @media (max-width: 740px) {
     #hamburger-nav .logo img {
         width: 500px;
@@ -90,6 +96,12 @@
 @media (max-width: 675px) {
     #hamburger-nav .logo img {
         width: 400px;
+    }
+}
+
+@media (max-width: 660px) {
+    .intro-video iframe {
+        width: 200px;
     }
 }
 
@@ -201,6 +213,10 @@
         padding-bottom: 2rem;
     }
 
+    #hamburger-nav .logo img {
+        max-width: 100%;
+    }
+
     .menu-links {
         left: 10%;
     }
@@ -244,9 +260,6 @@
 }
 
 @media (max-width: 400px) {
-    #hamburger-nav .logo img {
-        width: 300px;
-    }
 
     .social-container h1, .hours h1 {
         font-size: 2.5rem;
@@ -310,5 +323,161 @@
 
     .reviews h1 {
         font-size: 2.25rem;
+    }
+
+    .section__pic-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section__text__p1 {
+        font-size: 2.5rem
+    }
+
+    .title {
+        font-size: 2.75rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .photo-container img {
+        max-width: 200px;
+    }
+
+    .about-p p {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    .preload .text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 310px) {
+    .section__text__p1 {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .section__text__p2, .title-2{
+        line-height: 1.25;
+        font-size: 1.75rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .social-container .social a i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .contact-form h2 {
+        font-size: 2.25rem;
+    }
+
+    .menu-group-heading {
+        font-size: 1.75rem;
+        line-height: 1.25;
+    }
+
+    .menu-item-name, .menu-item-price {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .sub-heading {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+
+}
+
+@media (max-width: 290px) {
+    .menu-links li a {
+        font-size: 1.5rem;
+    }
+
+    .section__text__p1 {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section__text__p2, .title-2{
+        font-size: 1.35rem;
+    }
+
+    .btn {
+        font-size: 1.15rem;
+    }
+
+    .social a i {
+        font-size: 4rem;
+    }
+
+    .footer-links li a {
+        font-size: 1.5rem;
+    }
+
+    .copyright p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 285px) {
+    .menu-group-heading {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .menu-item-name, .menu-item-price {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+
+    .sub-heading {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .tuesday-menu-announcement h3, .tuesday-menu-announcement p, .tuesday-menu-button{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+}
+
+@media (max-width: 280px) {
+    .social-container .social a i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 265px) {
+    .section__text__p1 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+
+    .social a i {
+        font-size: 3.5rem;
     }
 }

@@ -422,6 +422,7 @@ section {
     color: hsl(20, 9%, 26%);
     font-size: 3rem;
     padding-bottom: 1rem;
+    line-height: 1;
 }
 
 .section__text__p2  {
@@ -434,6 +435,7 @@ section {
     text-align: center;
     color: black;
     padding-bottom: 2rem;
+    line-height: 1;
 }
 
 /* BUTTONS */
@@ -532,7 +534,10 @@ section {
 /* VIDEO */
 
 #video {
-    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 
 .intro-video {
@@ -543,7 +548,7 @@ section {
 }
 
 .intro-video iframe {
-    width: 35%;
+    width: 400px;
 }
 
 /* MAP */
@@ -593,7 +598,7 @@ footer {
 
 .footer-logo img {
     height: 200px;
-    width: auto;
+    max-width: 100%;
 }
 
 .social {
@@ -603,6 +608,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 5px;
+    max-width: 100%;
 }
 
 .social i {
@@ -906,7 +912,6 @@ footer {
     background-color: rgba(26, 26, 26, 0.75);
     padding: 4rem;
     border-radius: 2rem;
-    margin: 2rem;
 }
 
 .about-p h1 {
@@ -1049,7 +1054,7 @@ footer {
     margin: 80px auto 0;
     width: 100%;
     position: absolute;
-    top: -0.3%;
+    top: -0.25%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(26, 26, 26);
@@ -1094,6 +1099,7 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     gap: 0.25em;
     justify-content: center;
+    line-height: 1;
 }
 
 input[type="checkbox"]:checked ~ .dropdown-content {
