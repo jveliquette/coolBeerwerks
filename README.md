@@ -17,6 +17,7 @@ The Cool Beerwerks website is designed to showcase the range of craft beers, the
 <li> Accessibility: Designed with accessibility best practices to accommodate users with disabilities. </li>
 <li> Performance: Optimized for fast load times and smooth navigation. </li>
 
-
+<br>
+Live Site: https://www.cbwbeer.com
 
 
